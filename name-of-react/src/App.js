@@ -1,15 +1,16 @@
-
+import logo from './logo.svg';
 import './App.css';
+import Counter from './component/Counter';
 import{useState} from'react'
 import { BrowserRouter,
   Routes,
   Route,
   Link
-}
-from 'react-router-dom'
-import Home from'./views/Home'
-import Inventory from'./views/Inventory'
-import Profile from'./views/Profile'
+}from 'react-router-dom'
+import Home from './views/Home'
+import Inventory from './views/Inventory'
+import Profile from './views/Profile'
+import CarSingle from './views/CarSingle';
 
 function App() {
   return(
@@ -28,6 +29,7 @@ function App() {
       </ul>
     </nav>
     <Routes>
+      <Route path="/Car/:id" element={<CarSingle/>}/>
       <Route path="/Inventory" element={<Inventory/>}/>
       <Route path="/Profile" element={<Profile/>}/>
       <Route path="/" element={<Home/>}/>

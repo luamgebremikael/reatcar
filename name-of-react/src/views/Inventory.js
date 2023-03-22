@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Counter from '../components/Counter'
+import Counter from '../component/Counter'
 
 export default function Inventory() {
     const [counters, setCounters] = useState([
