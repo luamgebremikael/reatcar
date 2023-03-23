@@ -17,10 +17,9 @@ export default function Inventory() {
         },
         {
           title: 'Insurance Package',
-          iniitalCount:315
+          iniitalCount:3
         }
       ])
-    
     
     
     
